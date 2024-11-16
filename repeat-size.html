@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeat Size Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, 100px);
+            grid-template-rows: repeat(2, 100px);
+            grid-auto-rows: 200px;
+        }
+
+        .items-container{
+            background-color: purple;
+            color: white;
+            border: 5px solid orange;
+            font: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items-container">1</div>
+        <div class="items-container">2</div>
+        <div class="items-container">3</div>
+        <div class="items-container">4</div>
+        <div class="items-container">5</div>
+    </div>
+    
+</body>
+</html>

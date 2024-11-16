@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Size Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows:  100px 200px;
+            grid-template-columns: 400px 400px;
+        }
+
+        .div-item{
+            font-size: 3rem;
+            background-color: purple;
+            border: 10px solid orange;
+            color: white;
+
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Fixed Size Grid</h1>
+    <div class="container">
+        <div class="div-item">1</div>
+        <div class="div-item">2</div>
+        <div class="div-item">3</div>
+        <div class="div-item">4</div>
+    </div>
+</body>
+</html>

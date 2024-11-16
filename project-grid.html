@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid Sizing Exercise</title>
+    <style>
+        h1{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .parent{
+            display: grid;
+            grid-template-columns: auto 400px minmax(200px, 500px);
+            grid-template-rows: 1fr 1fr 2fr;
+            grid-auto-rows: 3fr;
+            background-color: green;
+            width: 80%;
+            background-color: rgb(188, 188, 188);
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .parent > * {
+            background-color: seagreen;
+            color: white;
+            border: 5px solid white; 
+            padding: 20px;
+            font: 18px;
+        }
+
+        .items-1{
+            background-color: rgb(3, 100, 47);
+            border: 5px solid white
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Grid Sizing</h1>
+        <div class="parent">
+            <div class="items-1">width expands to fill space</div>
+            <div class="items-1">400px Wide</div>
+            <div class="items-1">min 200px max 500px wide</div>
+
+            <div class="items-1">width expands to fill space</div>
+            <div class="items-1">400px Wide</div>
+            <div class="items-1">min 200px max 500px wide</div>
+
+            <div class="items-1">width expands to fill space</div>
+            <div class="items-1">400px Wide</div>
+            <div class="items-1">min 200px max 500px wide</div>
+
+            <div class="items-1">500px high</div>
+    </div>
+
+        <div class="parent2">
+            <div class="items-2">Width expands to fill space</div>
+            <div class="items-2">400px wide</div>
+            <div class="items-2">min 200px max 500px wide</div>
+            <div class="items-2">Width expands to fill space</div>
+            <div class="items-2">400px wide</div>
+            <div class="items-2">min 200px max 500px wide</div>
+            <div class="items-2">Width expands to fill space</div>
+            <div class="items-2">400px wide</div>
+            <div class="items-2">min 200px max 500px wide</div>
+            <div class="items-2">50px high</div>
+        </div>
+</body>
+</html>
